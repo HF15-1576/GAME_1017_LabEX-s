@@ -61,8 +61,15 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< Updated upstream
     <Compile Include="Assets\Scripts\SoundManager.cs" />
+=======
+    <Compile Include="Assets\Scripts\GameUI.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\SegmentSpawner.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\CameraFollow.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
