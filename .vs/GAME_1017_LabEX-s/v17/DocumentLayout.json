@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\hunte\\Documents\\GitHub\\GAME_1017_LabEX-s\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A5139562-1803-B4DD-5F42-A2E64D34EDC6}|Assembly-CSharp.csproj|c:\\users\\hunte\\documents\\github\\game_1017_labex-s\\assets\\scripts\\gameui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5139562-1803-B4DD-5F42-A2E64D34EDC6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A5139562-1803-B4DD-5F42-A2E64D34EDC6}|Assembly-CSharp.csproj|c:\\users\\hunte\\documents\\github\\game_1017_labex-s\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5139562-1803-B4DD-5F42-A2E64D34EDC6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\hunte\\Documents\\GitHub\\GAME_1017_LabEX-s\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
@@ -52,7 +56,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "GameUI.cs",
+              "DocumentMoniker": "C:\\Users\\hunte\\Documents\\GitHub\\GAME_1017_LabEX-s\\Assets\\Scripts\\GameUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameUI.cs",
+              "ToolTip": "C:\\Users\\hunte\\Documents\\GitHub\\GAME_1017_LabEX-s\\Assets\\Scripts\\GameUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T20:58:06.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CameraFollow.cs",
               "DocumentMoniker": "C:\\Users\\hunte\\Documents\\GitHub\\GAME_1017_LabEX-s\\Assets\\Scripts\\CameraFollow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFollow.cs",
@@ -64,7 +81,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "SegmentSpawner.cs",
               "DocumentMoniker": "C:\\Users\\hunte\\Documents\\GitHub\\GAME_1017_LabEX-s\\Assets\\Scripts\\SegmentSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SegmentSpawner.cs",
@@ -76,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\hunte\\Documents\\GitHub\\GAME_1017_LabEX-s\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
