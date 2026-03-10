@@ -1,20 +1,15 @@
+using System;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-<<<<<<< Updated upstream
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-=======
     public static GameManager Instance { get; private set; }
 
     public enum GameState { Menu, Ingame, GameOver }
     public GameState CurrentState { get; private set; } = GameState.Menu;
 
-    // This is for UI and other elements to react to state changes if needed
     public event Action<GameState> OnStateChanged;
 
-    // References to Other Scripts
     [SerializeField] private PlayerController player;
     [SerializeField] private SegmentSpawner segmentSpawner;
     [SerializeField] private CameraFollow cameraFollow;
@@ -23,30 +18,30 @@ public class GameManager : MonoBehaviour
     private Quaternion playerStartRot;
 
     private void Awake()
->>>>>>> Stashed changes
     {
-        
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-<<<<<<< Updated upstream
-        
-=======
-        // Keeps track of players position and rotation for easy restart
         if (player != null)
         {
             playerStartPos = player.transform.position;
             playerStartRot = player.transform.rotation;
         }
 
-        // Set player reference in SegmentSpawner so it can manage spawning based on player position
-        if (segmentSpawner != null)
-        {
+        if (segmentSpawner != null && player != null)
             segmentSpawner.SetPlayer(player.transform);
-        }
-          
+
+        if (cameraFollow != null && player != null)
+            cameraFollow.SetTarget(player.transform);
 
         SetState(GameState.Menu);
     }
@@ -55,7 +50,6 @@ public class GameManager : MonoBehaviour
     {
         CurrentState = newState;
 
-        // Freeze/unfreeze gameplay
         bool playing = (newState == GameState.Ingame);
 
         if (player != null)
@@ -66,8 +60,13 @@ public class GameManager : MonoBehaviour
         OnStateChanged?.Invoke(newState);
     }
 
-    // UI calls these:
-    public void Play() => SetState(GameState.Ingame);
+    public void Play()
+    {
+        if (cameraFollow != null)
+            cameraFollow.SnapToTarget();
+
+        SetState(GameState.Ingame);
+    }
 
     public void Die() => SetState(GameState.GameOver);
 
@@ -75,7 +74,6 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
 
-        // Reset player
         if (player != null)
             player.ResetPlayer(playerStartPos, playerStartRot);
 
@@ -86,7 +84,5 @@ public class GameManager : MonoBehaviour
             segmentSpawner.ResetAndBuild();
 
         SetState(GameState.Ingame);
->>>>>>> Stashed changes
     }
-
 }
